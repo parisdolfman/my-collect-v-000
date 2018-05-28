@@ -1,8 +1,9 @@
 def my_collect(array)
   i = 0
+  new_array = []
     while i < array.length #handles an empty collection
-      yield(array[i])
+      new_array << yield(array[i])
       i+=1
-      array.upcase
     end
+    new_array
 end
